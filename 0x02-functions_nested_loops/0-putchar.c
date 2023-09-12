@@ -1,13 +1,22 @@
-#include <stdio.h>
-#include <main.h>
+#include "main.h"
 /**
- * main - main function
+ * main - function that prints _putchar.
  *
  * Return: should be 0 succesful
  */
 
 int main(void)
 {
-	printf("_putchar\m");
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+
+	_putchar('\n');
+
 	return (0);
 }
