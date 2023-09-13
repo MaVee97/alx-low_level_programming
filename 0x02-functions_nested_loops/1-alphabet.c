@@ -13,7 +13,10 @@ void print_alphabet(void)
 	for (x = 'a'; x <= 'z'; x++)
 	{
 		_putchar(x);
+<<<<<<< HEAD
 	
+=======
+>>>>>>> 38de48546dac20cbb9c6b85b7a460ade6e92c65f
 	}
 	_putchar('\n');
 }
