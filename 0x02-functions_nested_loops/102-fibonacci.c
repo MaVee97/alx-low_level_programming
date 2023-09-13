@@ -8,19 +8,19 @@
 
 int main(void)
 {
-	int num1 = 1;
-	int num2 = 2;
+	unsigned long int num1 = 1;
+	unsigned long int num2 = 2;
 	int x;
-	int next;
+	unsigned long int next;
 
-	printf("%d, %d, ", num1, num2);
+	printf("%lu, %lu", num1, num2);
 
-	for (x = 1 ; x < 50 ; x++)
+	for (x = 2 ; x < 50 ; x++)
 	{
 		next = num1 + num2;
 		num1 = num2;
 		num2 = next;
-		printf("%d, ", next);
+		printf(", %lu", next);
 	}
 	printf("\n");
 	return (0);
