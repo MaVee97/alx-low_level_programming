@@ -8,12 +8,12 @@
 
 int main(void)
 {
-	unsigned long int num1 = 1;
-	unsigned long int num2 = 2;
+	unsigned long int num1 = 0;
+	unsigned long int num2 = 1;
 	int x;
+	unsigned long int sum = 0;
 	unsigned long int next;
 
-	printf("%lu, %lu", num1, num2);
 
 	for (x = 1 ; x < 50 ; x++)
 	{
@@ -22,9 +22,11 @@ int main(void)
 		num2 = next;
 		if (next < 4000000 && next % 2 == 0)
 		{
-			printf(", %lu", next);
+			sum = sum + next;
 		}
+
 	}
+	printf("%lu", sum);
 	printf("\n");
 	return (0);
 }
