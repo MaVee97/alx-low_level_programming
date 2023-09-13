@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints out the first 50 Fibonacci numbers
+ * main - prints out even numbers less than 4000000 in the fibonacci sequence
  *
  * Return: void
  */
@@ -20,7 +20,10 @@ int main(void)
 		next = num1 + num2;
 		num1 = num2;
 		num2 = next;
-		printf(", %lu", next);
+		if (next < 4000000 && next % 2 == 0)
+		{
+			printf(", %lu", next);
+		}
 	}
 	printf("\n");
 	return (0);
