@@ -22,13 +22,12 @@ void times_table(void)
 			}
 			else
 			{
-				printf("%2d,", answer);
+				printf("%2d", answer);
 				if (y != 9)
 				{
 					printf(", ");
 				}
 			}
-			printf("%2d, ", answer);
 		}
 		printf("\n");
 	}
