@@ -38,6 +38,6 @@ char *argstostr(int ac, char **av)
 		}
 		result[z++] = '\n';
 	}
-	result[z] = '\n';
+	result[z] = '\0';
 	return (result);
 }
